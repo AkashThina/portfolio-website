@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+     /* background: #d0ff00 !important; */
+background: radial-gradient(circle, white 0%, skyblue 70%) !important;
+/* background-image: url('/public/hacker.jpg') !important */
+}

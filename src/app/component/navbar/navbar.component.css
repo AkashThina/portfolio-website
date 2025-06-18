@@ -1,0 +1,35 @@
+.floating-nav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  border-radius: 50px;
+  background: linear-gradient(to right, skyblue, skyblue);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.floating-nav .nav-link {
+  color: #06061fd0;
+  font-weight: 500;
+  /* margin: 0 10px; */
+  transition: color 0.3s ease;
+}
+
+.floating-nav .nav-link:hover,
+.floating-nav .nav-link.active {
+  /* color: #e100ff; */
+  background: linear-gradient(to right, #e100ff, #7f00ff);
+  /* like .gradient-text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #7f00ff;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}

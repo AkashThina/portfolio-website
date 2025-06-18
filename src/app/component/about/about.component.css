@@ -1,0 +1,51 @@
+.center-div {
+    margin-top: 180px;
+}
+
+.about-icon-wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #1e1e2f, #1a1a2e);
+    border: 5px solid #ae68ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle {
+    color: #000000;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 60ch;
+    /* Adjust this to control how many characters fit per line */
+    line-height: 1.5;
+}
+
+.content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #c494f3, #9f59e6bc #e100ff);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 2s infinite alternate ease-in-out;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 100% center;
+    }
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

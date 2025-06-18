@@ -1,0 +1,91 @@
+.hero-section {
+  position: relative;
+  height: 100vh;
+  /* background: linear-gradient(120deg, #4bdae1c6, #84c6cac6); */
+  /* color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #c494f3, #9f59e6bc #e100ff);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 2s infinite alternate ease-in-out;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 100% center;
+  }
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 60ch;
+  /* Adjust this to control how many characters fit per line */
+  line-height: 1.5;
+}
+
+
+
+.cta-btn {
+  margin-top: 30px;
+  padding: 12px 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cta-btn:hover {
+  transform: scale(1.05);
+}
+
+
+.social-links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-link i {
+  font-size: 1.5rem;
+  color: #7f00ff;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-link:hover i {
+  transform: scale(1.2);
+  color: #000000;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, rgb(241, 97, 229), blueviolet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
